@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+  --font: "Poppins";
+  --bg: #242940;
+  --primary: #2c415a;
+  --secondary: #fff;
+  --accent: #e7832a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font), sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+h2 span {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  width: 10rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li button {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+li p {
+  text-align: left;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+select,
+input[type="range"],
+button {
+  margin: 0.5rem 0 1.5rem;
+  font-family: var(--font);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+input[type="range"] {
+  color: red;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+}
+
+button:hover {
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+progress[value] {
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: var(--accent);
+  border-radius: 5px; 
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--primary);
+}
+
+.header > p {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.main {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.filters {
+  margin: 1rem 0;
+}
+
+.hide {
+  display: none;
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-part h2 {
+  margin-bottom: 1rem;
+}
+
+.top-part p {
+  font-size: 1.25rem;
+}
+
+.answer {
+  padding: 1rem; 
+}
+
+.active {
+  background-color: var(--accent);
+}
+
+#questions article {
+  margin: 1rem 0;
+}
+
+#questions article h2 {
+  margin-bottom: 1rem;
+}
+
+#results button {
+  margin-top: 1rem;
+}
+
+#q-btn {
+  display: flex;
+  justify-content: left;
+}
+
+#start,
+#next,
+#skip,
+#stop,
+#restart {
+  width: auto;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+}
+
+#next {
+  margin-right: auto;
+}
+
+#score {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+#score span {
+  font-size: 1.25rem;
+}
+
+#highlight {
+  font-weight: 500;
+  color: var(--accent)
+}

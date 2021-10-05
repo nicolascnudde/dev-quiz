@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./src/styles/styles.css"> -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>Quiz Time!</title>
+</head>
+<body>
+
+  <header class="header wrapper">
+    <h1>Quiz Time!</h1>
+  </header>
+
+  <main class="main wrapper" id="app">
+
+    <section id="filters">
+      <form action="">
+          <div>
+            <label for="category">Category</label>
+            <select name="category" id="category"></select>
+          </div>
+          <div>
+            <label for="difficulty">Difficulty</label>
+            <select name="difficulty" id="difficulty"></select>
+          </div>
+          <div>
+            <label for="limit">Max number of questions: <span id="limit_value">10</span></label>
+            <input type="range" name="limit" id="limit" min="1" max="20" value="10"/>
+          </div>
+        <div>
+          <button id="start" type="submit">Start Quiz</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="questions"></section>
+    <section id="results"></section>
+
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
